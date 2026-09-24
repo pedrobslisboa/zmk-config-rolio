@@ -16,14 +16,31 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Draw keymap
-        uses: caksoylar/keymap-drawer@main
         with:
-          keymap_path: "config/sofle.keymap"
-          output_folder: "keymap-drawer"
-          amend_commit: true
-          install_branch: "main"
-          # Force 42-key corne physical layout (keymap has 42 keys,
-          # the default "sofle" preset expects 60).
-          draw_args: "-l '{zmk_keyboard: corne}'"
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Generate SVG
+        run: |
+          mkdir -p keymap-drawer
+          keymap -c keymap_drawer.config.yaml parse -z config/sofle.keymap > keymap-drawer/sofle.yaml
+          keymap -c keymap_drawer.config.yaml draw keymap-drawer/sofle.yaml -l '{zmk_keyboard: corne}' > keymap-drawer/sofle.svg
+
+      - name: Commit updated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add keymap-drawer/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate keymap SVG"
+            git push
+          fi
