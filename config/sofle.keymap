@@ -79,7 +79,7 @@
        &kp UNDER       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5    /*|                                 |*/  &kp FSLH       &kp N7          &kp N8          &kp N9          &kp N0          &kp EQUAL
        &kp LBKT        &kp EXCL        &kp AT          &mkp RCLK       &mkp LCLK       &kp PRCNT /*├─────────────╮     ╭─────────────┤*/  &kp STAR       &kp N4          &kp N5          &kp N6          &kp N0          &kp MINUS
        &kp PSCRN       &kp LG(DOT)     &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE        &kp EQUAL                                          &kp BSLH       &kp N1          &kp N2          &kp N3          &kp BACKSLASH   &kp PLUS
-/* ╰───────────────┴───────────────┤*/                                 ___             ___             ___                 &kp LSHIFT     &kp DEL        &kp EQUAL                  //├───────────────┴───────────────╯
+/* ╰───────────────┴───────────────┤*/                                 ___             ___             ___                 &kp LSHIFT     &kp DEL        ___                        //├───────────────┴───────────────╯
 //                                 ╰───────────────┴───────────────┴───────────────┴───────────────┴─────────────╯     ╰─────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
             >;
         };
