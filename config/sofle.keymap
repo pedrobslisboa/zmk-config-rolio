@@ -24,6 +24,15 @@
 #define HOTKEY  3
 
 
+// Allow tap-then-hold to repeat the tap key (e.g., tap BSPC + hold BSPC = repeat delete)
+// instead of triggering the layer/modifier. Only applies within 200ms after a tap.
+&lt {
+    quick-tap-ms = <200>;
+};
+
+&mt {
+    quick-tap-ms = <200>;
+};
 
 / {
 
