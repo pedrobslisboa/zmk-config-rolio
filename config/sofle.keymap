@@ -22,6 +22,7 @@
 #define NUMBER  1
 #define FN  2
 #define HOTKEY  3
+#define GAME    4
 
 
 // Allow tap-then-hold to repeat the tap key (e.g., tap BSPC + hold BSPC = repeat delete)
@@ -101,7 +102,7 @@
             
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-       &kp F11         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5    /*|                                 |*/  &kp F6         &kp F7          &kp F8          &kp F9          &kp F10          &kp F12 
+       &tog 4          &kp F1          &kp F2          &kp F3          &kp F4          &kp F5    /*|                                 |*/  &kp F6         &kp F7          &kp F8          &kp F9          &kp F10          &kp F12
        &kp CAPSLOCK    &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT /*├─────────────╮     ╭─────────────┤*/  &kp CARET      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT        &kp MINUS
        ___             ___             &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE        &kp EQUAL                                          &kp PRCNT      &kp N1          &mt COMMA N2    &mt DOT N3      &kp KP_DIVIDE    &kp KP_MULTIPLY
 /* ╰───────────────┴───────────────┤*/                                 &kp LGUI        &kp LALT      &kp LA(SPACE)            ___            ___         &kp N0                                    //├───────────────┴───────────────╯
@@ -123,7 +124,21 @@
             >;
         };
 
-    
+        // GAME layer — optimized for League of Legends.
+        // Only direct &kp bindings (no layer-tap/mod-tap) so nothing gets
+        // triggered by accident while spamming keys or holding Space to
+        // center camera. Toggle in/out via `&tog 4`.
+        game_layer {
+            label = "GAME";
+            bindings = <
+// ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬────────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
+      &kp ESC          &kp Q            &kp W           &kp E           &kp R           &kp T     /*|                                 |*/   &kp Y          &kp U           &kp I            &kp O           &kp P            &kp BSPC
+      &kp TAB          &kp A            &kp S           &kp D           &kp F           &kp G     /*├─────────────╮     ╭─────────────┤*/   &kp H          &kp J           &kp K            &kp L           &kp SEMI         &kp SQT
+      &kp LSHIFT       &kp Z            &kp X           &kp C           &kp V           &kp B                                                &kp N          &kp M           &kp COMMA        &kp DOT         &kp FSLH         &kp RSHIFT
+/* ╰───────────────┴───────────────┤*/                                 &kp LSHIFT      &kp LCTRL       &kp SPACE           &kp LALT       &kp ENTER      &tog 4           //├───────────────┴───────────────╯
+//                                 ╰───────────────┴───────────────┴───────────────┴────────────────┴─────────────╯     ╰─────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
+            >;
+        };
 
     };
 
