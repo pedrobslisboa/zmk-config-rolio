@@ -154,12 +154,31 @@ layers:
     type: trans
   - t: ▽
     type: trans
+  - t: ▽
+    type: trans
   - '&msc SCRL_UP'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_DOWN'
+  - t: ▽
+    type: trans
   - t: ▽
     type: trans
   - '&soft_off'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - t: ▽
+    type: trans
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
   - t: ▽
     type: trans
   - '&bl BL_TOG'
@@ -169,32 +188,10 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  - t: ▽
-    type: trans
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
   - '&msc SCRL_LEFT'
   - t: ▽
     type: trans
-  - t: ▽
-    type: trans
+  - '&msc SCRL_DOWN'
   - t: ▽
     type: trans
   - '&msc SCRL_RIGHT'
