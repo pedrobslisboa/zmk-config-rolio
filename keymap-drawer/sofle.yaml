@@ -42,10 +42,10 @@ layers:
   - t: RETURN
     h: NUMBER
   - SPACE
-  - '&layer_toggle'
+  - LGUI
   - t: BSPC
     h: FN
-  - LGUI
+  - '&layer_toggle'
   NUMBER:
   - UNDER
   - '1'
