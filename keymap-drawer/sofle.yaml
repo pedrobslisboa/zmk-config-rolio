@@ -95,7 +95,8 @@ layers:
   - t: ▽
     type: trans
   FN:
-  - F11
+  - t: GAME
+    h: toggle
   - F1
   - F2
   - F3
@@ -209,3 +210,47 @@ layers:
     type: trans
   - t: ▽
     type: trans
+  GAME:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - SEMI
+  - SQT
+  - LSHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - COMMA
+  - DOT
+  - FSLH
+  - RSHIFT
+  - LSHIFT
+  - LCTRL
+  - SPACE
+  - LALT
+  - ENTER
+  - t: GAME
+    h: toggle
