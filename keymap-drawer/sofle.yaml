@@ -91,7 +91,8 @@ layers:
     type: trans
   - LSHIFT
   - DEL
-  - EQUAL
+  - t: ▽
+    type: trans
   FN:
   - F11
   - F1
