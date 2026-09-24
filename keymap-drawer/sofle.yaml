@@ -42,7 +42,7 @@ layers:
   - t: RETURN
     h: NUMBER
   - SPACE
-  - LGUI
+  - '&gui_alt'
   - t: BSPC
     h: FN
   - '&layer_toggle'
