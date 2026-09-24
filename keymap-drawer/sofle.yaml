@@ -41,7 +41,8 @@ layers:
   - LCTRL
   - t: RETURN
     h: NUMBER
-  - SPACE
+  - t: SPACE
+    h: MOUSE
   - '&gui_alt'
   - t: BSPC
     h: FN
@@ -139,7 +140,7 @@ layers:
     type: trans
   - type: held
   - '0'
-  HOTKEY:
+  MOUSE:
   - OUT TOG
   - t: ▽
     type: trans
@@ -151,52 +152,28 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - t: ▽
+    type: trans
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - t: ▽
+    type: trans
   - '&soft_off'
   - t: ▽
     type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - '4'
-  - '5'
-  - '6'
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - '&bl BL_TOG'
-  - t: ▽
-    type: trans
-  - '&bl BL_DEC'
   - '&bl BL_TOG'
   - '&bl BL_INC'
-  - t: ▽
-    type: trans
-  - '1'
-  - '2'
-  - '3'
+  - '&bl BL_DEC'
   - t: ▽
     type: trans
   - t: ▽
     type: trans
   - t: ▽
     type: trans
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - t: ▽
     type: trans
   - t: ▽
@@ -205,4 +182,31 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  - '0'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&msc SCRL_LEFT'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&msc SCRL_RIGHT'
+  - t: ▽
+    type: trans
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - t: '&mkp MCLK'
+    type: held
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
