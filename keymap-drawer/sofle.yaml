@@ -46,7 +46,8 @@ layers:
   - '&gui_alt'
   - t: BSPC
     h: FN
-  - '&layer_toggle'
+  - t: '&layer_toggle'
+    h: LSHIFT
   NUMBER:
   - UNDER
   - '1'
