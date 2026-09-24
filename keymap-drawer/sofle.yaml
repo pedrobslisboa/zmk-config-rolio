@@ -2,7 +2,7 @@ layout:
   zmk_keyboard: corne
 layers:
   DEFAULT:
-  - GRAVE
+  - ESC
   - Q
   - W
   - E
@@ -13,8 +13,7 @@ layers:
   - I
   - O
   - P
-  - t: BSPC
-    h: ⌥⌫
+  - GRAVE
   - TAB
   - A
   - S
@@ -38,17 +37,15 @@ layers:
   - COMMA
   - DOT
   - FSLH
-  - RSHFT
-  - LGUI
+  - LALT
+  - LCTRL
   - t: RETURN
-    h: LCTRL
-  - t: ESC
     h: NUMBER
-  - t: BACKSPACE
-    h: NUMBER
-  - t: SPACE
-    h: MOUSE
-  - MEDIA
+  - SPACE
+  - LSHIFT
+  - t: BSPC
+    h: FN
+  - LGUI
   NUMBER:
   - UNDER
   - '1'
@@ -56,127 +53,94 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '6'
+  - FSLH
   - '7'
   - '8'
   - '9'
   - '0'
-  - DEL
+  - EQUAL
   - t: ▽
     type: trans
+  - EXCL
+  - AT
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - PRCNT
+  - STAR
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - MINUS
+  - PSCRN
+  - Gui+DOT
+  - LEFT BRACE
+  - RIGHT BRACE
+  - PIPE
+  - EQUAL
+  - BSLH
+  - '1'
+  - '2'
+  - '3'
+  - BACKSLASH
+  - PLUS
+  - t: ▽
+    type: trans
+  - type: held
+  - t: ▽
+    type: trans
+  - LSHIFT
+  - DEL
+  - EQUAL
+  FN:
+  - F11
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F12
+  - CAPSLOCK
   - EXCL
   - AT
   - HASH
   - DLLR
   - PRCNT
   - CARET
-  - AMPERSAND
-  - STAR
-  - LPAR
-  - RPAR
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - MINUS
   - t: ▽
     type: trans
-  - ⌃⌘␣
+  - t: ▽
+    type: trans
   - LEFT BRACE
   - RIGHT BRACE
   - PIPE
   - EQUAL
   - PRCNT
-  - PLUS
-  - LBKT
-  - RBKT
-  - BACKSLASH
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - type: held
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  MEDIA:
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - PREV
-  - PP
-  - NEXT
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - VOL DN
-  - VOL UP
-  - MUTE
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - BRI DN
-  - BRI UP
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
+  - '1'
+  - t: '2'
+    h: COMMA
+  - t: '3'
+    h: DOT
+  - KP DIVIDE
+  - KP MULTIPLY
+  - LGUI
+  - LALT
+  - Alt+SPACE
   - t: ▽
     type: trans
   - type: held
-  MOUSE:
+  - '0'
+  HOTKEY:
   - OUT TOG
   - t: ▽
     type: trans
@@ -188,30 +152,46 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  - t: ▽
-    type: trans
-  - '&msc SCRL_UP'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_DOWN'
-  - t: ▽
-    type: trans
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - '&soft_off'
   - t: ▽
     type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '4'
+  - '5'
+  - '6'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&bl BL_TOG'
+  - t: ▽
+    type: trans
+  - '&bl BL_DEC'
   - '&bl BL_TOG'
   - '&bl BL_INC'
-  - '&bl BL_DEC'
   - t: ▽
     type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - t: ▽
-    type: trans
+  - '1'
+  - '2'
+  - '3'
   - t: ▽
     type: trans
   - t: ▽
@@ -226,21 +206,4 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  - '&msc SCRL_LEFT'
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - '&msc SCRL_RIGHT'
-  - t: ▽
-    type: trans
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
-  - t: ▽
-    type: trans
-  - type: held
-  - t: ▽
-    type: trans
+  - '0'
