@@ -31,7 +31,18 @@ jobs:
         run: |
           mkdir -p keymap-drawer
           keymap -c keymap_drawer.config.yaml parse -z config/sofle.keymap > keymap-drawer/sofle.yaml
-          keymap -c keymap_drawer.config.yaml draw keymap-drawer/sofle.yaml -l '{zmk_keyboard: corne}' > keymap-drawer/sofle.svg
+          # Force the physical layout to corne (42 keys) since keymap-drawer
+          # cannot auto-detect a layout for the vendor-provided "sofle" shield
+          # (which is actually a 42-key Corne form factor).
+          python3 -c "
+          import yaml
+          with open('keymap-drawer/sofle.yaml') as f:
+              data = yaml.safe_load(f)
+          data['layout'] = {'zmk_keyboard': 'corne'}
+          with open('keymap-drawer/sofle.yaml', 'w') as f:
+              yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True)
+          "
+          keymap -c keymap_drawer.config.yaml draw keymap-drawer/sofle.yaml > keymap-drawer/sofle.svg
 
       - name: Commit updated SVG
         run: |
