@@ -1,0 +1,29 @@
+name: Draw ZMK keymaps
+on:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "keymap_drawer.config.yaml"
+      - ".github/workflows/draw-keymap.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Draw keymap
+        uses: caksoylar/keymap-drawer@main
+        with:
+          keymap_path: "config/sofle.keymap"
+          output_folder: "keymap-drawer"
+          amend_commit: true
+          install_branch: "main"
+          # Force 42-key corne physical layout (keymap has 42 keys,
+          # the default "sofle" preset expects 60).
+          draw_args: "-l '{zmk_keyboard: corne}'"

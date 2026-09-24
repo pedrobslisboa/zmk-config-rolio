@@ -1,0 +1,34 @@
+parse_config:
+  # Which layers to skip when generating the SVG
+  skip_binding_parsing: false
+
+  # Preprocess keymap file with cpp (needed for #define macros)
+  preprocess: true
+
+  # Custom keycode display labels
+  zmk_keycode_map:
+    LG(BSPC): "⌘⌫"
+    LA(BSPC): "⌥⌫"
+    LC(LG(SPACE)): "⌃⌘␣"
+    LC(BSPC): "⌃⌫"
+
+draw_config:
+  # Overall drawing config
+  key_h: 56
+  key_w: 60
+  split_gap: 60
+
+  # Colors
+  bg_color: "#f8f8f8"
+  key_color: "#ffffff"
+
+  # Show layer names above each rendered layer
+  draw_key_sides: true
+  dark_mode: auto
+
+  # Show combos and mouse layers nicely
+  small_pad: 2
+
+  # Font (default: Arial)
+  # svg_style: |
+  #   .keymap { font-family: "Fira Code", monospace; }
