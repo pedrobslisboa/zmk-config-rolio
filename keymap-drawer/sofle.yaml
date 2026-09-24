@@ -1,0 +1,225 @@
+layout:
+  zmk_keyboard: corne
+layers:
+  DEFAULT:
+  - GRAVE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - t: BSPC
+    h: ⌥⌫
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - SEMI
+  - SQT
+  - LSHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - COMMA
+  - DOT
+  - FSLH
+  - RSHFT
+  - LGUI
+  - t: RETURN
+    h: LCTRL
+  - NUMBER
+  - BACKSPACE
+  - t: SPACE
+    h: MOUSE
+  - '&mkp LCLK'
+  NUMBER:
+  - UNDER
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - DEL
+  - t: ▽
+    type: trans
+  - EXCL
+  - AT
+  - HASH
+  - DLLR
+  - PRCNT
+  - CARET
+  - AMPERSAND
+  - STAR
+  - LPAR
+  - RPAR
+  - MINUS
+  - t: ▽
+    type: trans
+  - ⌃⌘␣
+  - LEFT BRACE
+  - RIGHT BRACE
+  - PIPE
+  - EQUAL
+  - PRCNT
+  - PLUS
+  - LBKT
+  - RBKT
+  - BACKSLASH
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - type: held
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  FN:
+  - t: ▽
+    type: trans
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - EXCL
+  - AT
+  - HASH
+  - DLLR
+  - PRCNT
+  - CARET
+  - '4'
+  - '5'
+  - t: '6'
+    h: LPAR
+  - t: PLUS
+    h: RPAR
+  - MINUS
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - LEFT BRACE
+  - RIGHT BRACE
+  - PIPE
+  - EQUAL
+  - PRCNT
+  - '1'
+  - t: '2'
+    h: COMMA
+  - t: '3'
+    h: DOT
+  - KP DIVIDE
+  - KP MULTIPLY
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '0'
+  MOUSE:
+  - OUT TOG
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - t: ▽
+    type: trans
+  - '&soft_off'
+  - t: ▽
+    type: trans
+  - '&bl BL_TOG'
+  - '&bl BL_INC'
+  - '&bl BL_DEC'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&msc SCRL_LEFT'
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - '&msc SCRL_RIGHT'
+  - t: ▽
+    type: trans
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - t: ▽
+    type: trans
+  - type: held
+  - t: ▽
+    type: trans
