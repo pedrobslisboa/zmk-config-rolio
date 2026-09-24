@@ -25,12 +25,19 @@
 #define GAME    4
 
 
-// Allow tap-then-hold to repeat the tap key (e.g., tap BSPC + hold BSPC = repeat delete)
-// instead of triggering the layer/modifier. Only applies within 200ms after a tap.
+// Layer-tap tweaks:
+// - flavor "hold-preferred": if any key is pressed while &lt is held, immediately
+//   treat as HOLD (layer active). This makes layer activation snappy — e.g.,
+//   hold L2 + tap Q correctly gives layer-1's Q (a number) instead of RETURN + Q.
+// - quick-tap-ms: after a tap+release, if pressed again within 200ms treat as
+//   tap-repeat (so hold-to-repeat backspace/enter still works).
 &lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
     quick-tap-ms = <200>;
 };
 
+// Mod-tap keeps default balanced flavor (better for modifier + letter combos).
 &mt {
     quick-tap-ms = <200>;
 };
