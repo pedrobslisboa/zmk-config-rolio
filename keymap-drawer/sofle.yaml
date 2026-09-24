@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - NON US BSLH
+  - '&layer_toggle'
   - TAB
   - A
   - S
