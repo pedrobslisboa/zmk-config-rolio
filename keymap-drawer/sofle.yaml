@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - '&layer_toggle'
+  - NON US BSLH
   - TAB
   - A
   - S
@@ -42,7 +42,7 @@ layers:
   - t: RETURN
     h: NUMBER
   - SPACE
-  - LGUI
+  - '&layer_toggle'
   - t: BSPC
     h: FN
   - LGUI
