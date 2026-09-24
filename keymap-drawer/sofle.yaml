@@ -247,7 +247,7 @@ layers:
   - DOT
   - FSLH
   - RSHIFT
-  - LSHIFT
+  - NUMBER
   - LCTRL
   - SPACE
   - LALT
