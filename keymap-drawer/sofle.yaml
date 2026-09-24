@@ -48,7 +48,7 @@ layers:
     h: NUMBER
   - t: SPACE
     h: MOUSE
-  - '&mkp LCLK'
+  - MEDIA
   NUMBER:
   - UNDER
   - '1'
@@ -100,52 +100,7 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  FN:
-  - t: ▽
-    type: trans
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - EXCL
-  - AT
-  - HASH
-  - DLLR
-  - PRCNT
-  - CARET
-  - '4'
-  - '5'
-  - t: '6'
-    h: LPAR
-  - t: PLUS
-    h: RPAR
-  - MINUS
-  - t: ▽
-    type: trans
-  - t: ▽
-    type: trans
-  - LEFT BRACE
-  - RIGHT BRACE
-  - PIPE
-  - EQUAL
-  - PRCNT
-  - '1'
-  - t: '2'
-    h: COMMA
-  - t: '3'
-    h: DOT
-  - KP DIVIDE
-  - KP MULTIPLY
+  MEDIA:
   - t: ▽
     type: trans
   - t: ▽
@@ -156,7 +111,71 @@ layers:
     type: trans
   - t: ▽
     type: trans
-  - '0'
+  - t: ▽
+    type: trans
+  - PREV
+  - PP
+  - NEXT
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - VOL DN
+  - VOL UP
+  - MUTE
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - BRI DN
+  - BRI UP
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - type: held
   MOUSE:
   - OUT TOG
   - t: ▽
